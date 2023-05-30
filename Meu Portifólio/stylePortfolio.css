@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+   
+  body {
+    background-color: gainsboro;
+    margin: auto;
+    max-width: 100%;
+    
+  }
+
+  header {
+    font-size: small;
+    background-color: rgb(0, 0, 0);
+    opacity: 100%;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    max-width: 100%;
+    
+  }
+
+  header h1 {
+    font-size: 10px;
+    padding-top: 40px;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    margin-left: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: medium;
+    max-width: 100%;
+    animation: animacao 1s ease-in-out;
+    
+  }
+
+  @keyframes animacao {
+    0% {
+      margin-left: 400px;
+    }
+    100% {
+      margin-left: 600px;
+    }
+  }
+  
+  .navbarItens {
+      padding: 10px;
+      text-decoration: none;
+      color: aliceblue;
+      text-align: center;
+      margin-left: 7px;
+      margin-right: 7px;
+      padding-right: 13px;
+      position: relative;
+      
+  }
+
+  .navbarItens::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  .navbarItens:hover::after {
+    width: 100%;
+  }
+  
+  .navbarImg {
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    justify-content: flex-end;
+    
+  }
+
+ /* INICIO DA MAIN - HOME */
+
+  .main1 {
+    border-radius: 20px;
+    background-color: lightblue;
+    justify-content: flex-end;
+    display: flex;
+    height: 83vh;
+    
+  }
+
+
+  .textomain {
+    background-color: Indigo;
+    border-right: solid;
+    border-bottom: solid;
+    margin-left: 0;
+    margin-right: 0;
+    width: 63%;
+    padding: 150px;
+    margin-top: 7vh;
+  
+  }
+
+  .textomain h1 {
+    font-size: 10vh;
+    font-family: 'M PLUS 1 Code', sans-serif;
+  }
+
+  .textomain h3 {
+    color: rgba(255, 255, 255, 0.692);
+    font-family: 'M PLUS Code Latin', sans-serif;
+
+  }
+
+  .imagemmain {
+    background-color: rgba(255, 255, 0, 0.562);
+    border-left: solid;
+    border-bottom: solid;
+    margin-right: 0;
+    margin-left: 0;
+    width: 37%;
+    max-width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+
+  #minhaFOTO {
+    border-radius: 20% 0 20% 0;
+    border: solid;
+    background-color: aliceblue;
+    margin-top: 24vh;
+    align-items: center;
+    margin-left: 60%;
+    margin-right: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .aboutme {
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(34, 0, 255, 0.74), rgb(217, 252, 209));
+  }
+
+  .aboutmetext {
+    padding-top: 20vh;
+  }
+
+  .aboutme h2 {
+    font-family: 'Fira Code', monospace;
+    font-size: 5vh;
+  }
+
+  .aboutme p {
+    border-radius: 4%;
+    display: inline-block;
+    padding: 5px 10px;
+    height: 500px;
+    background-color: whitesmoke;
+    border-left: solid 7px;
+    border-bottom: solid 7px;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    
+  }
+
+  .aboutmeimage {
+    padding-top: 20vh;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .curriculobutton {
+    border-radius: 7px;
+    background-color: firebrick;
+    color:white;
+    text-align: center;
+    font-style: italic;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-top: solid 1px black;
+    border-right: solid 1px black;
+    width: 80px;
+    height: 42px;
+  }
+
+  .curriculobutton:hover {
+    width: 85px;
+    height: 47px;
+    margin-top: 6px;
+  }
+
+  .skills {
+    text-align: center;
+    padding-top: 20vh;
+
+    background-image: linear-gradient(to bottom, rgb(217, 252, 209), rgba(34, 0, 255, 0.74));
+  }
+
+  .skills h2 {
+    font-family: 'Fira Code', monospace;
+    font-size: 5vh;
+  }
+
+  .skillsimagens {
+    border-radius: 4%;
+    background-color: whitesmoke;
+    display: inline-block;
+    padding: 16px;
+    margin: 0.3vh;
+    margin-right: 1vh;
+    border-right: solid 7px;
+    border-bottom: solid 7px;
+    border-top: solid 1px;
+    border-left: solid 1px;
+  }
+
+  .skillsimagens:hover{
+    background-color:mediumturquoise;
+  }
+
+
+  .skillsimg1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .skillsimg2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .skillstext {
+    text-align: center;
+  }
+
+  .projects {
+    text-align: center;
+    padding-top: 18vh;
+    
+    
+    background-image: linear-gradient(to bottom, rgba(34, 0, 255, 0.74), rgb(217, 252, 209));
+  }
+
+  .projects h2 {
+    font-family: 'Fira Code', monospace;
+    font-size: 5vh;
+  }
+
+  .projects p {
+
+    display: inline-block;
+    padding: 5px 10px;
+    
+
+  }
+
+  .projectstext {
+    
+    text-align: center;
+  }
+
+  .projetoslista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  iframe {
+    width: 100%;
+    height: 40%;
+    
+  }
+
+  .projeto1 {
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 2%;
+    border-left: solid 7px;
+    border-bottom: solid 7px;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    margin: auto;
+    width: 340.5px;
+    height: 580px;
+    padding: 5px 10px;
+  }
+
+  .projeto1 p {
+    padding-top: 2vh;
+  }
+
+  #ViewProject {
+    margin-top: 4vh;
+    background-color: Indigo;
+    color:white;
+    border-radius: 6%;
+    height: 5vh;
+    width: 7vw;
+  }
+
+  /*width: 310px;*/
+  .projeto1:hover {
+    background-color: rgba(255, 255, 255, 0.719);
+    border-color: rgb(49, 5, 5);
+  }
+
+  .projeto2 {
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 2%;
+    border-left: solid 7px;
+    border-bottom: solid 7px;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    margin: auto;
+    width: 340.5px;
+    height: 580px;
+    padding: 5px 10px;
+    
+  }
+
+  .projeto2:hover {
+    background-color: rgba(255, 255, 255, 0.719);
+    border-color: rgb(49, 5, 5);
+  }
+
+  .projeto3 {
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 2%;
+    border-left: solid 7px;
+    border-bottom: solid 7px;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    margin: auto;
+    width: 340.5px;
+    height: 580px;
+    padding: 5px 10px;
+    
+  }
+
+  .projeto3:hover {
+    background-color: rgba(255, 255, 255, 0.719);
+    border-color: rgb(49, 5, 5);
+  }
+
+  .projeto4 {
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 2%;
+    border-left: solid 7px;
+    border-bottom: solid 7px;
+    border-top: solid 1px;
+    border-right: solid 1px;
+    margin: auto;
+    width: 340.5px;
+    height: 580px;
+    padding: 5px 10px;
+    
+  }
+
+  .projeto4:hover {
+    background-color: rgba(255, 255, 255, 0.719);
+    border-color: rgb(49, 5, 5);
+  }
+
+
+
+  footer {
+    background-color: black;
+    border-top: solid;
+    
+  }
+
+  .frase {
+    font-size:large;
+  }
+
+  .CONTACTS {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+  }
+
+  .imagemCONTACTS {
+    display: flex;
+  }
+
+  .ladoalado {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+  }
+
+  .imagemCONTACTS2 {
+    margin-left: 40px;
+  }
+
+  .contatoLegenda {
+    padding-left: 9px;
+    padding-bottom: 15px; 
+    border-bottom: solid 1px white;
+    
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Encode+Sans+Condensed:wght@600&family=M+PLUS+1+Code&family=Oswald:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto+Mono:ital,wght@1,500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
